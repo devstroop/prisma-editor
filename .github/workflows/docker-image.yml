@@ -1,13 +1,12 @@
-name: Docker Image CI
+name: Build & Publish
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-  build:
+  next-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
